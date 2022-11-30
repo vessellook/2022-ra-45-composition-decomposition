@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/2022-ra-45-composition-decomposition/static/css/main.7a013f1b.css",
+    "main.js": "/2022-ra-45-composition-decomposition/static/js/main.8c2c262f.js",
+    "static/js/787.6b4f0584.chunk.js": "/2022-ra-45-composition-decomposition/static/js/787.6b4f0584.chunk.js",
+    "static/media/banner.png": "/2022-ra-45-composition-decomposition/static/media/banner.8e293e17d650b9918b92.png",
+    "static/media/board.png": "/2022-ra-45-composition-decomposition/static/media/board.3b6776f842116ac5b091.png",
+    "index.html": "/2022-ra-45-composition-decomposition/index.html",
+    "main.7a013f1b.css.map": "/2022-ra-45-composition-decomposition/static/css/main.7a013f1b.css.map",
+    "main.8c2c262f.js.map": "/2022-ra-45-composition-decomposition/static/js/main.8c2c262f.js.map",
+    "787.6b4f0584.chunk.js.map": "/2022-ra-45-composition-decomposition/static/js/787.6b4f0584.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a013f1b.css",
+    "static/js/main.8c2c262f.js"
+  ]
+}
