@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: 10px auto;
+  width: 900px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.news__header {
+  padding-bottom: 10px;
+}
+
+.news__title {
+  color: #7baae0;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.news__title_current {
+  color: #0b58b4;
+}
+
+.news__time {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.news__body {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news__item {
+  position: relative;
+}
+
+.news__link {
+  color: black;
+  text-decoration: none;
+}
+
+.news__icon {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 5px;
+  height: 12px;
+}
+
+.ad__title {
+  color: #0b58b4;
+  font-weight: 600;
+}
+
+.rates {
+  display: flex;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.rates__title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.rates__value {
+  margin-right: 5px;
+}
+
+.rates__delta {
+  margin-right: 15px;
+  color: #aaa;
+}
+
+.search {
+  margin: 20px 0;
+}
+
+.search__links {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search__link {
+  color: #0b58b4;
+  margin-right: 15px;
+}
+
+.search__more-button {
+  color: #0b58b4;
+  cursor: pointer;
+}
+
+.search__more {
+  display: none;
+}
+
+.search__form {
+  position: relative;
+  display: flex;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.search__logo {
+  position: absolute;
+  right: calc(100% + 15px);
+}
+
+.search__query {
+  border: 2px solid #ffd85d;
+  outline: none;
+  width: 600px;
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.search__button {
+  border: none;
+  outline: none;
+  height: 100%;
+  background: #ffd85d;
+  box-sizing: border-box;
+}
+
+.search__random-query {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.search__random-query:hover {
+  text-decoration: underline;
+}
+
+.search__random-query::before {
+  content: '\a0';
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.banner__image {
+  max-width: 100%;
+}
+
+.widgets {
+  margin-top: 30px;
+  column-count: 3;
+}
+
+.widget {
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+.widget__title {
+  color: #0b58b4;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+}
+
+.widget__icon {
+  margin-left: 10px;
+}
+
+.most-visited {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.most-visited__item {
+  margin-bottom: 5px;
+}
+
+.most-visited__category {
+  font-weight: bold;
+}
+
+.most-visited__category::after {
+  content: '\2014';
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.ether {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(95,183,251,1) 0%, rgba(120,141,250,1) 100%);
   color: white;
+  border-radius: 4px;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.ether::before {
+  content: "\25b8\a0\a0";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tv {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tv__item {
+  margin-top: 5px;
+}
+
+.tv__channel {
+  margin-left: 5px;
+  color: #aaa;
+}
+
+.audio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.audio__item {
+  position: relative;
+}
+
+.audio__item::before {
+  content: '\a0\25b8';
+  display: block;
+  position: absolute;
+  right: calc(100% + 5px);
+  top: 5px;
+  border-radius: 100%;
+  background: #70a0fb;
+  width: 12px;
+  height: 12px;
+  line-height: 10px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.audio__channel {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+@media(max-width: 1210px) {
+  .container {
+    margin: 10px auto;
+    width: 600px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search__query {
+    width: 500px;
+  }
+
+  .widgets {
+    column-count: 2;
+  }
+}
+
+@media(max-width: 810px) {
+  .container {
+    margin: 10px auto;
+    max-width: 400px;
+  }
+
+  .search__query {
+    width: 300px;
+  }
+
+  .widgets {
+    column-count: 1;
+  }
+
+  .ad {
+    display: none;
+  }
+
+  .search__link {
+    display: none;
+  }
+
+  .search__link:nth-child(-n + 3) {
+    display: block;
+  }
+}
+
+@media(max-width: 610px) {
+  .search__logo {
+    display: none;
   }
 }
